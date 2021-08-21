@@ -12,4 +12,5 @@ jobs:
       - name: Run local k6 test
         uses: k6io/action@v0.1
         with:
-          filename: tests/common-test.js
+          filename: tests/back.api.cart.js
+          flags: -c options.load.json
