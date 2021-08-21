@@ -19,7 +19,7 @@
       {
         "threshold": "p(95)<500",
         "abortOnFail": true,
-        "delayAbortEval": "1min"
+        "delayAbortEval": "1m"
       }
     ]
   }
