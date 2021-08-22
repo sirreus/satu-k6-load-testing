@@ -1,13 +1,13 @@
 {
   "stages": [
-    { "duration": "10m", "target": 100 },
-    { "duration": "10m", "target": 100 },
-    { "duration": "10m", "target": 1000 },
-    { "duration": "20m", "target": 1000 },
+    { "duration": "5m", "target": 500 },
+    { "duration": "5m", "target": 500 },
+    { "duration": "10m", "target": 5000 },
+    { "duration": "10m", "target": 5000 },
     { "duration": "10m", "target": 0 }
   ],
   "thresholds": {
-    "errors": ["rate<0.15"],
+    "errors": ["rate<0.2"],
     "http_req_duration": [
       "p(99)<5000",
       {
