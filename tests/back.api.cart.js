@@ -16,7 +16,11 @@ export default function () {
 
   let res = http.batch([req]);
   const result = check(res, {
-    "is status 200": (r) => r.status === 200,
+    "is status 200": (r) => {
+      r.status === 200;
+      console.log(">>> Resp status: " + r.status);
+      console.log(">>> Resp time from server: " + r.timings.waiting);
+    },
   });
 
   errorRate.add(!result);
