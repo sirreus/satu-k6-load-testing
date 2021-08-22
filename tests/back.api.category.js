@@ -12,7 +12,7 @@ export default function () {
     url: `${BASE_URL}${endpoint}`,
   };
 
-  let res = http.batch([req1]);
+  let res = http.batch([req]);
   check(res, {
     "is status 200": (r) => r.status === 200,
   });
