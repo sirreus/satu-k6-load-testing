@@ -1,10 +1,4 @@
 {
-  "ext": {
-    "loadimpact": {
-      "projectID": 3548627,
-      "name": "SATU LOAD TEST"
-    }
-  },
   "stages": [
     { "duration": "10m", "target": 1000 },
     { "duration": "10m", "target": 1000 },
@@ -13,11 +7,11 @@
     { "duration": "10m", "target": 0 }
   ],
   "thresholds": {
-    "errors": ["rate<0.1"],
+    "errors": ["rate<0.15"],
     "http_req_duration": [
       "p(99)<1500",
       {
-        "threshold": "p(95)<500",
+        "threshold": "p(95)<1000",
         "abortOnFail": true,
         "delayAbortEval": "1m"
       }
