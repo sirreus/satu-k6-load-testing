@@ -1,7 +1,7 @@
 {
   "stages": [
-    { "duration": "5m", "target": 900 },
-    { "duration": "5m", "target": 900 }
+    { "duration": "5m", "target": 500 },
+    { "duration": "5m", "target": 500 }
   ],
   "thresholds": {
     "errors": ["rate<0.2"],
