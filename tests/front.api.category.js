@@ -1,7 +1,7 @@
 import http from "k6/http";
 import { check, sleep } from "k6";
 
-const BASE_URL = "https://api-v2.satu.pro/api/front";
+const BASE_URL = "https://satu.pro/api/front";
 
 export default function () {
   const endpoint = "/category/shtukaturnye-stancii";
