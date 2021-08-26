@@ -1,0 +1,13 @@
+{
+  "name": "satu-load-testing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "run": "npx k6 run /tests/front.api.cart.js -c options.load.easy.json",
+    "run:cloud": "npx k6 cloud /tests/front.api.cart.js -c options.load.easy.json",
+    "har:convert": "npx har-to-k6 /hars/satu.pro.product.har -o /tests/http.satu.pro.product.js"
+  },
+  "dependencies": {
+    "har-to-k6": "^0.9.0"
+  }
+}

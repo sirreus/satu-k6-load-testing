@@ -12,7 +12,7 @@ jobs:
       - name: Run local k6 test
         uses: k6io/action@v0.1
         with:
-          filename: tests/front.api.cart.js
+          filename: tests/http.satu.pro.js
           flags: -c options.load.easy.json
 
   # k6_cloud_test:
